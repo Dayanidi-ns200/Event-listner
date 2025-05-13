@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+     <label for="subject">Tamil</label>
+     <input type="text" id="tamil" onfocus="highlighttamil()" onblur="outputdisplay()"><br>
+    <h1 id="demo"></h1> 
+     <label for="subject">English</label>
+     <input type="text" id="english" onfocus="highenglish()" onblur="downenglish()"><br>
+    <h1 id="demo_1"></h1> 
+    <label for="subject">Maths</label>
+     <input type="text" id="maths" onfocus="daya()" onblur="dondaya()"><br>
+    <h1 id="demo_2"></h1> 
+    <label for="subject">Science</label>
+     <input type="text" id="science" onfocus="daya1()" onblur="dondaya1()"><br>
+    <h1 id="demo_3"></h1> 
+    <label for="subject">Social</label>
+     <input type="text" id="social" onfocus="daya2()" onblur="dondaya2()"><br>
+    <h1 id="demo_4"></h1>
+    <script>
+         function highlighttamil() {
+         var daya=document.getElementById("tamil")
+         daya.style.background="red"
+    }
+    function outputdisplay() {
+        val=document.getElementById("tamil").value
+        document.getElementById("demo").innerHTML=val
+    }
+    function highenglish() {
+         var daya=document.getElementById("english")
+         daya.style.background="blue"
+    }
+    function downenglish() {
+        val=document.getElementById("english").value
+        document.getElementById("demo_1").innerHTML=val
+    }
+    function daya() {
+         var daya=document.getElementById("maths")
+         daya.style.background="gray"
+    }
+    function dondaya() {
+        val=document.getElementById("maths").value
+        document.getElementById("demo_2").innerHTML=val
+    }
+    function daya1() {
+         var daya=document.getElementById("science")
+         daya.style.background="green"
+    }
+    function dondaya1() {
+        val=document.getElementById("science").value
+        document.getElementById("demo_3").innerHTML=val
+    }
+    function daya2() {
+         var daya=document.getElementById("social")
+         daya.style.background="orange"
+    }
+    function dondaya2() {
+        val=document.getElementById("social").value
+        document.getElementById("demo_4").innerHTML=val
+    }
+        
+        
+    
+    </script>
+</body>
+</html>
